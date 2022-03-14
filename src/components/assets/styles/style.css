@@ -1,0 +1,74 @@
+/* all pages */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: green;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* navbar */
+.navbar {
+    background-color: red;
+}
+
+.navitems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: blue;
+}
+/* about me */
+img {
+    width: 100%;
+    height: 250px;
+}
+.about {
+    height: 482px;
+    margin-left: 25%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    width: 50%
+}
+
+/* portfolio */
+.portcont {
+    margin-left: 25%;
+    width: 50%;
+    background-color: red;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+/* contact */
+.wrapper {
+    height: 500px;
+    margin-bottom: 236px;
+    background-color: red;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+/* resume */
+footer {
+    background-color: blue;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex end;
+}
