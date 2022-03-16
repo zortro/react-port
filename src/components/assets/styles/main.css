@@ -12,11 +12,13 @@ li {
 }
 
 a {
-    color: black;
+    color: white;
+    text-decoration: none;
 }
 
 a:hover {
     color: white;
+    color: rgb(245, 84, 84);
 }
 
 /* navbar */
@@ -51,11 +53,11 @@ a:hover {
 }
 
 .active {
-    color: rgb(245, 84, 84);
+    color: rgb(223, 130, 223);
 }
 
 .nav:hover {
-    color: rgb(245, 84, 84);
+    color: rgb(223, 130, 223);
 }
 
 .profilePicture {
@@ -69,7 +71,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 1660px) {
-    .link {
+    .nav {
         font-size: 15px;
         padding: 0px;
     }
@@ -82,7 +84,7 @@ a:hover {
     .navbar{
         flex-flow: column;
     }
-    .link {
+    .nav {
         font-size: 12px;
         margin: 0 5px 0 5px;
     }
@@ -95,6 +97,8 @@ a:hover {
 .aboutCont {
     background-color: rgb(17, 17, 17);
     padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .bannerCont {
@@ -121,6 +125,7 @@ a:hover {
 .about {
     color: white;
     border: 1px solid white;
+    width: 25%;
     padding: 20px;
     text-align: start;
 }
@@ -142,18 +147,34 @@ a:hover {
 }
 
 /* contact */
-.wrapper {
-    height: 500px;
-    margin-bottom: 236px;
-    background-color: red;
+.contactCont {
+    background-color: rgb(17, 17, 17);
+    padding: 30px;
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    color: white;
+    border: 1px solid white;
+    width: 25%;
+    padding: 20px;
+    text-align: start;
+}
+
+.contactLi {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+}
+.link {
+    border: 1px solid white;
 }
 /* footer */
 footer {
+    color: white;
     margin-top: auto;
-    background-color: blue;
+    background-color: rgb(122, 65, 122);
     text-align: center;
     padding: 5px;
 }

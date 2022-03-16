@@ -12,9 +12,9 @@ export default function About() {
                     <aside>
                         <h3 className='aboutTitle'>Benjamin Dominguez</h3>
                         <p>Is an aspiring Junior Full-Stack Developer.</p>
-                        <p>Benjamin can write in HTML, CSS, JavaScript, and JQuery. Using these languages Benjamin can fit all of your needs from front end to back end development.</p>
+                        <p>Benjamin can write in HTML, CSS, JavaScript, and JQuery. Using these languages Benjamin can fit all of your needs from front end to back end development. Benjamin attended a coding bootcamp at the University of Washington in December of 2021 and graduated in March of 2022 and has since been ready to use his coding skills to meet the needs of employers.</p>
                         <h2>To the person grading this page:</h2>
-                        <p>This page is not finalize, however now that I have completed project 3 I will be continuing to update this with new projects and styling. Thank you for your time and help through this course we are all very grateful to have had your assistance alongside our learning experience.</p>
+                        <p>This page is not finalized, however now that I have completed project 3 I will be continuing to update this with new projects and styling. Thank you for your time and help through this course we are all very grateful to have had your assistance alongside our learning experience.</p>
                     </aside>
                 </section>
             </div>
