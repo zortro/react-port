@@ -1,4 +1,5 @@
 import React from 'react';
+import me from '../assets/img/tempMe.jpg'
 
 export default function Nav({ currentPage, handlePageChange }) {
     return (
@@ -19,7 +20,7 @@ export default function Nav({ currentPage, handlePageChange }) {
                         <a href='#resume' onClick={() => handlePageChange('Resume')} className='link'>Resume</a>
                     </li>
                 </ul>
-                <img src='https://media.istockphoto.com/photos/cool-guy-picture-id182690920?s=612x612' alt='me' className='profilePicture'></img>
+                <img src={me} alt='me' className='profilePicture'></img>
             </nav>
 
         </div>
