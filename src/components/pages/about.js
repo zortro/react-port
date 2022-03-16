@@ -11,7 +11,8 @@ export default function About() {
                     <h3>Benjamin Dominguez</h3>
                     <p>Is an aspiring Junior Full-Stack Developer.</p>
                     <p>Benjamin can write in HTML, CSS, JavaScript, and JQuery. Using these languages Benjamin can fit all of your needs from front end to back end development.</p>
-                    <h2>THIS PAGE IS NOT FINALIZED</h2>
+                    <h2>To the person grading this page:</h2>
+                    <p>This page is not finalize, however now that I have completed project 3 I will be continuing to update this with new projects and styling. Thank you for your time and help through this course we are all very grateful to have had your assistance alongside our learning experience.</p>
                 </aside>
             </section>
         </div>
