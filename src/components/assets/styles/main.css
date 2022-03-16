@@ -139,14 +139,27 @@ a:hover {
     letter-spacing: 10px;
 }
 
-/* portfolio */
-.portcont {
-    margin-left: 25%;
-    width: 50%;
-    background-color: red;
+/* portfolio TODO: make this a carousel*/
+.portCont {
+    color: white;
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+.port {
+    padding: 50px;
+    background-color: rgb(17, 17, 17);
+}
+
+.proj {
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.sampleImg {
+    height: 350px;
+    width: auto;
 }
 
 /* contact */

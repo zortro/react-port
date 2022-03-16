@@ -20,35 +20,37 @@ export default function Portfolio() {
                 <LoadingPage />
             ) : (
                 <>
-                    <aside className='portcont'>
-                        <div className="img-1 desc">
-                            <h4>Oceans of Knowledge</h4>
-                            <img href='https://zortro.github.io/Project1/' src={OOK} alt='Oceans of Knowledge'/>
-                            <p>Try your hand at Oceans of Knowledge! Using multiple APIs to create a fun and questionably educational trivia game!</p>
-                        </div>
+                    <aside className='portCont'>
+                        <div className='port'>
+                            <div className='proj'>
+                                <h2>Oceans of Knowledge</h2>
+                                <img className="sampleImg" src={OOK} alt='Oceans of Knowledge'/>
+                                <p>Try your hand at Oceans of Knowledge! Using multiple APIs to create a fun and questionably educational trivia game!</p>
+                            </div>
 
-                        <div className="img-2 desc">
-                            <h4>Img Title</h4>
-                            <img src={PNF} alt='Page Not Found'/>
-                            <p>Img Desc</p>
-                        </div>
+                            <div className='proj'>
+                                <h2>Img Title</h2>
+                                <img className="sampleImg" src={PNF} alt='Page Not Found'/>
+                                <p>Img Desc</p>
+                            </div>
 
-                        <div className="img-3 desc">
-                            <h4>Img Title</h4>
-                            <img src={PNF} alt='Page Not Found'/>
-                            <p>Img Desc</p>
-                        </div>
+                            <div className='proj'>
+                                <h2>Img Title</h2>
+                                <img className="sampleImg" src={PNF} alt='Page Not Found'/>
+                                <p>Img Desc</p>
+                            </div>
 
-                        <div className="img-3 desc">
-                            <h4>Img Title</h4>
-                            <img src={PNF} alt='Page Not Found'/>
-                            <p>Img Desc</p>
-                        </div>
+                            <div className='proj'>
+                                <h2>Img Title</h2>
+                                <img className="sampleImg" src={PNF} alt='Page Not Found'/>
+                                <p>Img Desc</p>
+                            </div>
 
-                        <div className="img-5 desc">
-                            <h4>Img Title</h4>
-                            <img src={PNF} alt='Page Not Found'/>
-                            <p>Img Desc</p>
+                            <div className='proj'>
+                                <h2>Img Title</h2>
+                                <img className="sampleImg" src={PNF} alt='Page Not Found'/>
+                                <p>Img Desc</p>
+                            </div>
                         </div>
                     </aside>
                 </>
