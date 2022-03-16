@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Carousel from "flat-carousel";
 import OOK from '../assets/img/OokDemo.png'
 import PNF from '../assets/img/PageNotFound.png'
 import LoadingPage from './loading.js'
@@ -13,7 +14,6 @@ export default function Portfolio() {
         }, 1000)
         return () => { isMounted = false }
     })
-
     return(
         <>
             {loading === true ? (
