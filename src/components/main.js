@@ -26,7 +26,7 @@ export default function Main() {
         const pageChange = (page) => setPage(page)
 
         return (
-            <div>
+            <div className="pageContainer">
                 <Nav currentPage={currentPage} handlePageChange={pageChange} />
                 {renderPage()}
                 <Footer />

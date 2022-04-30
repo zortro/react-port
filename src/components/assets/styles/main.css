@@ -1,10 +1,15 @@
-/* all pages */
 body {
+    background-color: rgb(36, 36, 36);
+}
+
+* {
+    background-color: transparent;
     margin: 0;
     padding: 0;
-    background-color: rgb(36, 36, 36);
-    color: black;
+    font-size: 2vh;
+    color: white;
     font-family: 'Manrope', sans-serif;
+    transition: all .25s ease-in-out;
 }
 
 li {
@@ -12,187 +17,52 @@ li {
 }
 
 a {
-    color: white;
+    color: blue;
     text-decoration: none;
 }
 
-a:hover {
-    background: -webkit-linear-gradient(rgb(96, 165, 230), rgb(223, 130, 223));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh;
 }
 
-/* navbar */
-.navbar {
-    padding: 0 20px 0 20px;
-    background-color: rgb(17, 17, 17);
+.textContainer {
+    padding: 2vh;
+    margin: 2vh;
+    animation: loadText 1s ease-in-out;
+    border: 1px solid white;
+    width: 50%;
+}
+
+.accentText {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-}
-
-.pageTitle {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 50px;
-    color: white;
-}
-
-.navItems {
     justify-content: center;
-    display: flex;
-    font-size: 20px;
+    flex-direction: column;
+    animation: loadText 1s ease-in-out;
+    margin: 0 0 2vh 0;
+    padding: 5vh;
 }
 
-.nav {
-    text-decoration: none;
-    font-size: 25px;
-    padding: 10px;
-    margin: 0 50px 0 50px;
-    color: white;
+.textTitle {
+    font-size: 5vh;
+    margin: 0 0 2vh 0;
+    letter-spacing: 1vh;
 }
 
-.active {
-    background: -webkit-linear-gradient(rgb(96, 165, 230), rgb(223, 130, 223));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.nav:hover {
-    color: rgb(223, 130, 223);
-}
-
-.profilePicture {
-    height: 50px;
-    border-radius: 100%;
-    width: auto;
-}
-
-.profilePicture:hover {
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 1660px) {
-    .nav {
-        font-size: 15px;
-        padding: 0px;
+@keyframes loadText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
-@media only screen and (max-width: 1280px) {
-    .pageTitle{
-        font-size: 25px;
-    }
-    .navbar{
-        flex-flow: column;
-    }
-    .nav {
-        font-size: 12px;
-        margin: 0 5px 0 5px;
-    }
-    .profilePicture {
-        display: none;
-    }
-}
-
-/* about me */
-.aboutCont {
-    background-color: rgb(17, 17, 17);
-    padding: 30px;
+.pageContainer {
     display: flex;
-    justify-content: center;
-}
-
-.bannerCont {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner {
-    margin-right: 1.5%;
-    height: 50%;
-    width: auto;
-}
-
-.bannerBg{
-    z-index: -1;
-    position: absolute;
-    height: 35%;
-    width: auto;
-}
-
-.about {
-    color: white;
-    border: 1px solid white;
-    width: 25%;
-    padding: 20px;
-    text-align: start;
-}
-
-.aboutTitle {
-    font-size: 50px;
-    margin: 0;
-    letter-spacing: 10px;
-}
-
-/* portfolio TODO: make this a carousel*/
-.portCont {
-    color: white;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.port {
-    padding: 50px;
-    background-color: rgb(17, 17, 17);
-    text-align: center;
-}
-
-.proj {
-    border: 1px solid white;
-    padding: 20px;
-    margin: 10px 0 10px 0;
-}
-
-.sampleImg {
-    height: 350px;
-    width: auto;
-}
-
-/* contact */
-.contactCont {
-    background-color: rgb(17, 17, 17);
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.contact {
-    color: white;
-    border: 1px solid white;
-    width: 25%;
-    padding: 20px;
-    text-align: start;
-}
-
-.contactLi {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row;
-}
-.link {
-    border: 1px solid white;
-}
-/* footer */
-footer {
-    color: white;
-    margin-top: auto;
-    background-color: rgb(122, 65, 122);
-    text-align: center;
-    padding: 5px;
+    flex-direction: column;
 }

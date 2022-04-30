@@ -20,7 +20,7 @@ export default function Portfolio() {
                 <LoadingPage />
             ) : (
                 <>
-                    <aside className='portCont'>
+                    <aside className='container'>
                         <div className='port'>
                             <div className='proj'>
                                 <h2>Oceans of Knowledge</h2>

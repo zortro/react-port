@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import me from '../assets/img/tempMe.jpg'
-import meAlt from '../assets/img/mealt.png'
-
-let pic
+import me from '../assets/img/lightMode.png'
+import meAlt from '../assets/img/darkMode.png'
 
 export default function Nav({ currentPage, handlePageChange }) {
     let [alt, setAlt] = useState(false)
@@ -19,7 +17,7 @@ export default function Nav({ currentPage, handlePageChange }) {
         <div>
             <nav className="navbar">
                 <h1 className='pageTitle'>Benjamin Dominguez</h1>  
-                <ul className='navItems'>
+                <ul className='nav'>
                     <li>
                         <a href='#about' onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav active' : 'nav'}>About Me</a>
                     </li>
@@ -34,9 +32,9 @@ export default function Nav({ currentPage, handlePageChange }) {
                     </li>
                 </ul>
                 {alt === false ? (
-                    <img src={me} onClick={altPic} alt='me' className='profilePicture'></img>
+                    <img src={me} onClick={altPic} alt='me' className='darkToggle'></img>
                     ) : (
-                    <img src={meAlt} onClick={mainPic} alt='me' className='profilePicture'></img>
+                    <img src={meAlt} onClick={mainPic} alt='me' className='darkToggle'></img>
                 )}
             </nav>
         </div>

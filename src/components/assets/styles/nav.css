@@ -1,0 +1,46 @@
+.navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vh;
+    align-items: center;
+}
+
+.pageTitle {
+    font-size: 5vh;
+}
+
+.nav {
+    font-size: 2.5vh;
+    padding: 0 2vh 0 2vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.active {
+    color: red;
+}
+
+.nav:hover {
+    color: red;
+}
+
+.darkToggle {
+    filter: invert(1);
+    height: 5vh;
+    width: auto;
+}
+
+.darkToggle:hover {
+    cursor: pointer;
+}
+
+@keyframes active {
+    0% {
+        color: white;
+    }
+    100% {
+        color: red;
+    }
+}
